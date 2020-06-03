@@ -45,6 +45,7 @@ ENV HOME=/root \
     DISPLAY_HEIGHT=768 \
     RUN_XTERM=yes \
     RUN_FLUXBOX=yes
+    access_token=91735fe1059af6e870aa23cf5bc2cdba
 
 
 COPY . /app
