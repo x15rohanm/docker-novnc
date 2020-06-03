@@ -31,8 +31,7 @@ RUN set -ex; \
     && rm -r /var/lib/apt/lists/* \
     && curl -L -O -s https://github.com/feelingsurf/viewer/releases/download/v1.3.0/FeelingSurfViewer-linux-amd64-1.3.0.deb \
     && dpkg -i FeelingSurfViewer-linux-amd64-1.3.0.deb \
-    && rm FeelingSurfViewer-linux-amd64-1.3.0.deb \
-    && export access_token=91735fe1059af6e870aa23cf5bc2cdba
+    && rm FeelingSurfViewer-linux-amd64-1.3.0.deb
 
 
 
