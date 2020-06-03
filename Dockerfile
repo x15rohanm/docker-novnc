@@ -29,9 +29,9 @@ RUN set -ex; \
     wget \
     xdg-utils \
     && rm -r /var/lib/apt/lists/* \
-    && curl -L -O -s https://github.com/feelingsurf/viewer/releases/download/v1.3.1/FeelingSurfViewer-linux-amd64-1.3.1.deb \
-    && dpkg -i FeelingSurfViewer-linux-amd64-1.3.1.deb \
-    && rm FeelingSurfViewer-linux-amd64-1.3.1.deb
+    && curl -L -O -s https://github.com/feelingsurf/viewer/releases/download/v1.3.0/FeelingSurfViewer-linux-amd64-1.3.0.deb \
+    && dpkg -i FeelingSurfViewer-linux-amd64-1.3.0.deb \
+    && rm FeelingSurfViewer-linux-amd64-1.3.0.deb
 
 
 
