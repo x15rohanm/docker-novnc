@@ -50,6 +50,9 @@ ENV HOME=/root \
     DISPLAY_HEIGHT=768 \
     RUN_XTERM=yes \
     RUN_FLUXBOX=yes
+    
+USER fsviewer 
+
 COPY . /app
 CMD ["/app/entrypoint.sh"]
 EXPOSE 8080
