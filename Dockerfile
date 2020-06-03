@@ -31,15 +31,10 @@ RUN set -ex; \
     && rm -r /var/lib/apt/lists/* \
     && curl -L -O -s https://github.com/feelingsurf/viewer/releases/download/v1.3.1/FeelingSurfViewer-linux-amd64-1.3.1.deb \
     && dpkg -i FeelingSurfViewer-linux-amd64-1.3.1.deb \
-    && rm FeelingSurfViewer-linux-amd64-1.3.1.deb \
-    && groupadd -r fsviewer \
-    && useradd -rm -g fsviewer fsviewer \
-    && echo 'pcm.!default {\n\
-    type plug\n\
-    slave.pcm "null"\n\
-}' > /etc/asound.conf
+    && rm FeelingSurfViewer-linux-amd64-1.3.1.deb
 
-# Setup demo environment variables
+
+
 ENV HOME=/root \
     DEBIAN_FRONTEND=noninteractive \
     LANG=en_US.UTF-8 \
@@ -50,8 +45,7 @@ ENV HOME=/root \
     DISPLAY_HEIGHT=768 \
     RUN_XTERM=yes \
     RUN_FLUXBOX=yes
-    
-USER fsviewer 
+
 
 COPY . /app
 CMD ["/app/entrypoint.sh"]
