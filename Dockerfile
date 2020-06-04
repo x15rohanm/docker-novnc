@@ -49,4 +49,3 @@ ENV HOME=/root \
 
 COPY . /app
 CMD ["/app/entrypoint.sh"]
-EXPOSE 8080
